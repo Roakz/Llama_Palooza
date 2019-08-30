@@ -1,0 +1,2 @@
+Class Llama_warriors
+end
