@@ -1,51 +1,75 @@
-#Super class Llamma warriors. Instance variables define the health,attack & defense stats for all llamas within the initialize method.
-class LlamaWarriors
-attr_accessor :health, :attack, :defense, :guspatcho_defense, :karl_attack, :lemonywinks_health
+#Requireds
+require 'artii'
+require 'rainbow'
+require_relative 'sloth_class'
+require_relative 'llama_classes'
 
-  def initialize
-    @health = 10
-    @attack = 3
-    @defense = 2
-  end 
+#Heading that says Welcome to llama palooza using the artii and rainbow gems to form a colourful ascii style heading.
+w = Artii::Base.new :font => 'slant'
+w = w.asciify('Welcome to . . .') 
+a = Artii::Base.new :font => 'slant'
+a = a.asciify('LLAMA!') 
+b = Artii::Base.new :font => 'slant'
+b = b.asciify('PALOOZA!!!')
+puts Rainbow("#{w}").red.bright
+puts Rainbow("#{a}").blue.bright
+puts Rainbow("#{b}").purple.bright
+puts "" #Empty line below heading
 
-end
-# Sub classes of The llama warrior class defined below for inheritance 
+# Game greeting made colourful with rainbow gem.
+puts Rainbow("------------------------------------------------------------------------------------------------------").bright.red
+puts ""
+puts Rainbow("We all know that Llamas and Sloths have long fought for title of warrior of the ages.Right here!").blue
+puts Rainbow("Right now!...Is your oppurtunity to join the clan of Llama Warriors in this epic battle.").blue
+puts Rainbow("A battle to the death...There can only be one winner. Choose your Llamma warrior wisely!").blue
+puts""
+puts Rainbow("--------------------Press ENTER to check out the Clans Profiles and make your pick--------------------").bright.red
 
-class Karl < LlamaWarriors # Karl has higher attack than the other llamas, value returned to @karl_attack
-  def k_able
-    @karl_attack = @attack + 1
-    p "Hey I'm Karl...I like to wear funny hats.... I am pleasant and speak calmly. Dont be fooled though!"
-    p "Im secretly a phycopath that get's the rumblies that only Sloth hands can satisfy."
-      "Check out my Stats! Health: #{@health} Attack: #{@karl_attack} Defense: #{@defense}"
-  end
-end 
-
-class Guspatcho < LlamaWarriors # Guspatcho as better defense than the other llamas, value retuned to @Guspatcho_defense
-  def g_able
-    @guspatcho_defense = @defense + 1
-    p "I am a the Guspatcho a!...I a come from the hills in Italia!. This is where i learna to defenda my territory!"
-    p "Fighting off sloths Pffft..easy peasy! You willa see that my a statsa reflect my skills!"
-      "Check out mya defensa! Health: #{@health} Attack: #{@attack} Defense: #{@guspatcho_defense}"
-  end
-end
-
-class LemonyWinks < LlamaWarriors #Lemony winks has higher health than other llamas, value returned to @lemony_health
-  def l_able
-    @lemony_health = @health += 3
-    p "Namaste! I'm Lemony-winks....I am a picture of llama vitality and health."
-    p "My passtimes include llama yoga & long walks On the beach "
-    p "As a result of the care that i take for myself im really hard to kill!"
-      "Check the Stats! Health: #{@lemony_health} Attack: #{@attack} Defense: #{@defense}"
-  end
-end
+gets.chomp # Allows user to press enter to coninue to the next page, which will be the llama profiles and stats.
+system("clear") # clears the screen to give the user a fresh page to select there llama from.
 
 
+
+#Llama Profiles and game rules page 
+
+# creating an instance of each llama subclass which will inherit the Llama super class attributes 
 karl = Karl.new
 guspatcho = Guspatcho.new
 lemonywinks = LemonyWinks.new
+#printing the individual llama sub classes with thier adjusted attributes.
+k = Artii::Base.new :font => 'slant'
+k = k.asciify('KARL') 
+puts Rainbow("#{k}").red.bright
+puts karl.k_able 
+puts" "
+g = Artii::Base.new :font => 'slant'
+g = g.asciify('Guspatcho') 
+puts Rainbow("#{g}").blue.bright
+puts guspatcho.g_able 
+puts" "
+l = Artii::Base.new :font => 'slant'
+l = l.asciify('Lemony - Winks') 
+puts Rainbow("#{l}").purple.bright
+puts lemonywinks.l_able 
 
-p karl.k_able
-p""
-p guspatcho.g_able
-p""
-p lemonywinks.l_able
+# sloth = Sloth.new
+# sloth1 = Sloth.new
+# sloth2 = Sloth.new
+# sloth3 = Sloth.new
+
+
+# puts sloth.com_health
+# puts sloth.com_attack
+# puts sloth.com_defense
+
+# puts sloth1.com_health
+# puts sloth1.com_attack
+# puts sloth1.com_defense
+
+# puts sloth2.com_health
+# puts sloth2.com_attack
+# puts sloth2.com_defense
+
+# puts sloth3.com_health
+# puts sloth3.com_attack
+# puts sloth3.com_defense
