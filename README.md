@@ -59,7 +59,7 @@ The second use of arrays will be in the battle loop. During battle at each attac
 2.4 Loops and conditionals
 The whole game will be contained within a "Loop DO" loop to ensure continuing game play whilst the player wishes to continue. Part of the play on loop will allow an option to change clans or remain the same. The main loop though will be the battle loop. This will use boolean operators to continue to loop "Until" a true is returned on a given condition (either players or sloth boss's HP is dimished).
 
-Conditionals will be used for selection at several points during the program. There will be a Case used to outline "when" conditions when choosing the laama, or randomize llama option, and also within the battle methods. The heads and tails to decide who starts will be a true false boolean operator using a simple if else statement.
+Conditionals will be used for selection at several points during the program. There will be a Case used to outline "when" conditions when choosing the laama, or randomize llama option, and also within the battle methods. The heads and tails to decide who starts will be a true/false boolean operator using a simple if else statement. 
 
 2.4 Error Handling
 Error handling will be developed through continuous (TDD) Test dirven development during development of this program and as issues are identified they will be resolved. The main areas that will be observed are anywhere that the user has input. I want to ensure that when inputs, other than what are requested, are entered an error will be returned and it will loop back for another opporunity for the user to input the request. This will arise at picking the Llama clan, heads and tales, anywhere the user needs to press enter to continue, when the user is asked if they want to play again and, if they choose to play again, when they are asked if they want to change clan.
@@ -80,7 +80,7 @@ game rules including how winner is calculated*
 
 4. Flow chart diagram
 
-Below i have attached a flow chart diagram which explains the flow of the game.. * research and insert formatt
+Below i have attached a flow chart diagram which explains the flow of the game.. * research and insert format also include an explanation of different flow control methods used i.e selective 
 
 5. how will i implement the app and track progress(trello).*
 
