@@ -1,5 +1,5 @@
 # roarkzprojects
-![Llama Palooza Welcome](pictures/greeting1.png)
+![Llama Palooza Welcome](/pictures/greeting1.png)
 
 #Application Development Plan#
 
