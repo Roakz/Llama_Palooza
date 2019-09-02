@@ -12,6 +12,11 @@ Contents
   2.4 Loops & Conditionals
   2.5 Error Handling
 3. User Guide
+  3.1 User instructions
+  3.2 Game rules
+4. Flow chart diagram
+5. App implementation
+6. Conclusion 
 
 1. Statement of Purpose and Scope
 
@@ -77,5 +82,7 @@ game rules including how winner is calculated*
 
 Below i have attached a flow chart diagram which explains the flow of the game.. * research and insert formatt
 
-5. how will i implement the app and track progress.*
+5. how will i implement the app and track progress(trello).*
+
+6. Conclusion
 
