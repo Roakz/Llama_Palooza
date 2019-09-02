@@ -4,7 +4,7 @@ require 'rainbow'
 require_relative 'sloth_class'
 require_relative 'llama_classes'
 
-#Heading that says Welcome to llama palooza using the artii and rainbow gems to form a colourful ascii style heading.
+# Heading that says Welcome to llama palooza using the artii and rainbow gems to form a colourful ascii style heading.
 w = Artii::Base.new :font => 'slant'
 w = w.asciify('Welcome to . . .') 
 a = Artii::Base.new :font => 'slant'
@@ -28,15 +28,12 @@ puts Rainbow("--------------------Press ENTER to check out the Clans Profiles an
 gets.chomp # Allows user to press enter to coninue to the next page, which will be the llama profiles and stats.
 system("clear") # clears the screen to give the user a fresh page to select there llama from.
 
-
-
-#Llama Profiles and game rules page 
-
-# creating an instance of each llama subclass which will inherit the Llama super class attributes 
+# Llama Profiles & selection
+# Creating an instance of each llama subclass which will inherit the Llama super class attributes 
 karl = Karl.new
 guspatcho = Guspatcho.new
 lemonywinks = LemonyWinks.new
-#printing the individual llama sub classes with thier adjusted attributes.
+# Printing the individual llama sub classes with thier adjusted attributes.
 k = Artii::Base.new :font => 'slant'
 k = k.asciify('KARL') 
 puts Rainbow("#{k}").red.bright
@@ -51,6 +48,21 @@ l = Artii::Base.new :font => 'slant'
 l = l.asciify('Lemony - Winks') 
 puts Rainbow("#{l}").purple.bright
 puts lemonywinks.l_able 
+puts""
+# Selection of prefered llama for battle.
+puts Rainbow("------------------------------------------").bright.red
+puts Rainbow("It's time to choose!").blue
+puts Rainbow("Options are 1. karl").blue
+puts Rainbow("            2.Guspatcho").blue
+puts Rainbow("            3.Lemony-Winks").blue
+puts Rainbow("            4. Randomly Generate").blue
+puts Rainbow("-----Type your response & press ENTER-----").bright.red
+player_selection = gets.chomp
+system("clear")
+# Game rules and llama computer match up.
+case player_selection
+  when 1
+    player = 
 
 # sloth = Sloth.new
 # sloth1 = Sloth.new
