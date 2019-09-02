@@ -59,10 +59,20 @@ puts Rainbow("            4. Randomly Generate").blue
 puts Rainbow("-----Type your response & press ENTER-----").bright.red
 player_selection = gets.chomp
 system("clear")
-# Game rules and llama computer match up.
-case player_selection
-  when 1
-    player = 
+
+# case player_selection
+#   when 1
+#     player = 
+#   when 2
+
+#   when 3
+
+#   when 4
+
+#   else 
+#     puts "please enter a valid selection"
+
+    # Game rules and llama computer match up.
 
 # sloth = Sloth.new
 # sloth1 = Sloth.new

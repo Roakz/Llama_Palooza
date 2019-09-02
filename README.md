@@ -71,12 +71,26 @@ From a development point of view i have installed the test-unit Gem which will b
 This guide will demonstrate how the user can access and use Llama palooza. The app will be presented in such a way that it will contain explicit instructions on how to play and be very easy to self navigate without much direction. each screen will prompt the user onto the next and the rules will be set out in an weasy to understand manner within the app and are also below for your convenience.
 
 3.1 User instrucitons
-*start up
+Start up
+To run the application you must have ruby installed with the appropriate GEMS as referenced in the gem file when the repository is downloaded. Enter the below command to run the program.
+
+![Start up](/pictures/startup.png)
+
+
 *exit instructions
 *guide through each step of game and what to press and do to proceed
 
-3.2
-game rules including how winner is calculated*
+3.2 Game rules
+Llama Palooza is a text based battle game in which you will select your preffered Llama to battle the Sloth Boss.
+Each Llama has different attributes so choose wisely! Once you have selected a llama the computer will generate the attributes of the Sloth Boss wihtin a fair range for fun and fair gameplay.
+
+a. Select a llama from the profile page (choose carefully they all have different attributes which are listed on the selection page.)
+b. The computer will randomly generate your matchup and display the match up on screen. Its time to pick heads or tales. The winner gets the first attack!
+c. You will be prompted to press enter to initalize your attack and a progress update will be posted to the screen. Whilst either you or the sloth boss are still standing you will continue the battle by pressing enter when prompted and continue to recieve updates of the battle! Good luck!
+d. Once a winner is decided, the results will be displayed, and you will be given the opportunity to play again or exit the app. simply enter a y/n input as prompted and press enter.
+e. If you choose to play on you will be given an option to select a new llama or cotinue with your current selection. Simply enter the appropriate y/n selection and press enter to continue!
+
+There is only one rule....Have Fun!!!
 
 4. Flow chart diagram
 

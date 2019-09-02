@@ -11,3 +11,5 @@ git_source(:github) {|repo_name| "https://github.com/#{repo_name}" }
 gem "artii", "~> 2.1"
 
 gem "rainbow", "~> 3.0"
+
+gem "test-unit", "~> 3.3"
