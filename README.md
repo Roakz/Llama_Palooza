@@ -123,7 +123,7 @@ I have used a very basic flow control diagram model. The oval indicates the begg
 ![Flow control](/pictures/flowchart.PNG)
 
 <h2>5. App Implementation</h2>
-In order to display efficient project managment & time management skills i will use a free internet tool called __Trello__ . (www.trello.com) This is a great tool that allows me to plan out a to do list, a doing list, and review list and a done list. I have also created some boards in trello for my user stories. The user stories arfe part of the planning stage that help a developer look at a project from all user angles. This should help create a well rounded product.
+In order to display efficient project managment & time management skills i will use a free internet tool called **Trello** . (www.trello.com) This is a great tool that allows me to plan out a to do list, a doing list, and review list and a done list. I have also created some boards in trello for my user stories. The user stories arfe part of the planning stage that help a developer look at a project from all user angles. This should help create a well rounded product.
 
 <h2>6. Conclusion</h2>
 
