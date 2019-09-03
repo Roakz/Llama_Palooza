@@ -30,17 +30,7 @@ def user_select(integer)
       end
     end
   end
-
-    def player_attack(p1, comp)
-      @comp_health = (comp[:sloth_h] - (p1[:llama_a] - p1[:llama_d]))
-      puts @comp_health
-    end
-
-    def comp_attack(p1, comp)
-      @p1_health = (p1[:llama_h] - (comp[:sloth_a] - comp[:sloth_d]))
-      puts @p1_health
-    end
-    
+  
     def match_up(user, sloth, player)
       puts Rainbow(player.print_artii(user)).bright.purple
       puts""
@@ -48,5 +38,21 @@ def user_select(integer)
       puts""
       puts Rainbow(player.print_artii(sloth)).bright.blue
     end
+
+    def battle_loop(p1, comp, coin)
+      @flip = rand(1..2)
+      puts @flip #testing
+        if @flip == coin
+        #player_attack
+          @comp_health = (comp[:sloth_h] - (p1[:llama_a] - p1[:llama_d]))
+          puts @comp_health
+        else
+          #comp_attack
+          @p1_health = (p1[:llama_h] - (comp[:sloth_a] - comp[:sloth_d]))
+          puts @p1_health
+        end
+
+        
+     end
 end
 
