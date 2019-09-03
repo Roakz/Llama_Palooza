@@ -4,21 +4,21 @@
 <h1>Application Development Plan<h1>
 
 <h3>Contents<h3>
-**1.** Statement of Purpose and Scope
+__1.__ Statement of Purpose and Scope
   1.1 Purpose
   1.2 Scope
-**2.** Application features
+__2.__ Application features
   2.1 Variable types
   2.2 Classes & methods
   2.3 Arrays
   2.4 Loops & Conditionals
   2.5 Error Handling
-**3.** User Guide
+__3.__ User Guide
   3.1 User instructions
   3.2 Game rules
-**4.** Flow chart diagram
-**5.** App implementation
-**6.** Conclusion 
+__4.__ Flow chart diagram
+__5.__ App implementation
+__6.__ Conclusion 
 
 <h3>1. Statement of Purpose and Scope<h3>
 
@@ -33,9 +33,9 @@ from 3 Llama clan warriors. Each of these characters will have a varying level o
 
 Once the match is displayed a heads and tails choice will go to the player and and the winner will start (either the player or sloth boss). Each player will take turns at attacking (randomly generated attack types) until a winner is apparent. The player will then have the option of playing again or exiting the game. If the player chooses to play again they can then choose if they want to change clans or continue with their current Llama. Sloth boss's attributrs will be regenerated to ensure fair game play.
 
-**Have fun!**
+__Have fun!__
 
-**What problem will it solve?** This is purely for professional and personal development and to meet assessment criteria.
+__What problem will it solve?__ This is purely for professional and personal development and to meet assessment criteria.
 
 Whos it for? This game will be a bit of fun for anybody who enjoys text based game play. Also I hope that some of the methods and features included, within Llama Palooza, will help aspiring developers with their own projects. I also look forward to having access to the finished product to look back at for my own developmental purposes.
 
@@ -49,11 +49,11 @@ Llama palooza will need to use multiple variable types during the operation of t
 <h4>2.2 Classes<h4>
 As previously stated, in the variable type section, Classes will be a large part of this program. I am planning on structuring the game on 3 main classes. 
 
-**The first class** will be the Llama class. Within the llama class there will be 3 sub-classes that inherit directly from the Llama "superclass" to initialize the over-arching attributes of the llamas. Each llama will then have 1 special attribute which will be specified in the specific subclass. This will mean it takes precedance over the superclass for that particular attribute. Although i could have used modules for this i found this to be a DRY-er simpler approach.
+__The first class__ will be the Llama class. Within the llama class there will be 3 sub-classes that inherit directly from the Llama "superclass" to initialize the over-arching attributes of the llamas. Each llama will then have 1 special attribute which will be specified in the specific subclass. This will mean it takes precedance over the superclass for that particular attribute. Although i could have used modules for this i found this to be a DRY-er simpler approach.
 
-**The second class** is the Sloth Boss class. Upon initialization the sloth class will randomly generate its attributes for each attribute area I.E Health, Attack & Hp. This will ensure fair and interesting game play.
+__The second class__ is the Sloth Boss class. Upon initialization the sloth class will randomly generate its attributes for each attribute area I.E Health, Attack & Hp. This will ensure fair and interesting game play.
 
-**Third and final** will be the battle class. This will execute the battle when initalized and will be composed using the attribute output from the initialized llamas and sloth Boss. I believe that using a class for this is the easiest way to contain the methods and allows it to be called as many times as is needed without creating an abundance of code.
+__Third and final__ will be the battle class. This will execute the battle when initalized and will be composed using the attribute output from the initialized llamas and sloth Boss. I believe that using a class for this is the easiest way to contain the methods and allows it to be called as many times as is needed without creating an abundance of code.
 
 <h4>2.3 Arrays<h4>
 I will use arrays in 2 sections of the app. The first array used will be if the player wants to randomly generate their llama instead of choosing for themselves. This will be a simple 3 element array containing the three clans which a random sample will be taken from & retuned as a result.
@@ -75,7 +75,7 @@ From a development point of view i have installed the test-unit Gem which will b
 This guide will demonstrate how the user can access and use Llama palooza. The app will be presented in such a way that it will contain explicit instructions on how to play and be very easy to self navigate without much direction. each screen will prompt the user onto the next and the rules will be set out in an weasy to understand manner within the app and are also below for your convenience.
 
 <h4>3.1 User instrucitons<h4>
-**Start up**
+__Start up__
 To run the application you must have ruby installed with the appropriate GEMS as referenced in the gem file when the repository is downloaded. Enter the below command to run the program.
 
 ![Start up](/pictures/startup.png)
@@ -88,13 +88,13 @@ To run the application you must have ruby installed with the appropriate GEMS as
 Llama Palooza is a text based battle game in which you will select your preffered Llama to battle the Sloth Boss.
 Each Llama has different attributes so choose wisely! Once you have selected a llama the computer will generate the attributes of the Sloth Boss wihtin a fair range for fun and fair gameplay.
 
-**a.** Select a llama from the profile page (choose carefully they all have different attributes which are listed on the selection page.)
-**b.** The computer will randomly generate your matchup and display the match up on screen. Its time to pick heads or tales. The winner gets the first attack!
-**c.** You will be prompted to press enter to initalize your attack and a progress update will be posted to the screen. Whilst either you or the sloth boss are still standing you will continue the battle by pressing enter when prompted and continue to recieve updates of the battle! Good luck!
-**d.** Once a winner is decided, the results will be displayed, and you will be given the opportunity to play again or exit the app. simply enter a y/n input as prompted and press enter.
-**e.** If you choose to play on you will be given an option to select a new llama or cotinue with your current selection. Simply enter the appropriate y/n selection and press enter to continue!
+__a.__ Select a llama from the profile page (choose carefully they all have different attributes which are listed on the selection page.)
+__b.__ The computer will randomly generate your matchup and display the match up on screen. Its time to pick heads or tales. The winner gets the first attack!
+__c.__ You will be prompted to press enter to initalize your attack and a progress update will be posted to the screen. Whilst either you or the sloth boss are still standing you will continue the battle by pressing enter when prompted and continue to recieve updates of the battle! Good luck!
+__d.__ Once a winner is decided, the results will be displayed, and you will be given the opportunity to play again or exit the app. simply enter a y/n input as prompted and press enter.
+__e.__ If you choose to play on you will be given an option to select a new llama or cotinue with your current selection. Simply enter the appropriate y/n selection and press enter to continue!
 
-**There is only one rule....Have Fun!!!**
+__There is only one rule....Have Fun!!!__
 
 <h3>4. Flow chart diagram<h3>
 
