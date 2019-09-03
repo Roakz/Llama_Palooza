@@ -96,7 +96,7 @@ You can exit the application at any time by pressing "contol C"
 
 <h3>3.2 Game rules</h3>
 Llama Palooza is a text based battle game in which you will select your preffered Llama to battle the Sloth Boss.
-Each Llama has different attributes so choose wisely! Once you have selected a llama the computer will generate the attributes of the Sloth Boss wihtin a fair range for fun and fair gameplay.<br>
+Each Llama has different attributes so choose wisely! Once you have selected a llama the computer will generate the attributes of the Sloth Boss wihtin a fair range for fun and fair gameplay.<br><br>
 
 
 __A.__ Select a llama from the profile page (choose carefully they all have different attributes which are listed on the selection page.)
@@ -123,7 +123,7 @@ I have used a very basic flow control diagram model. The oval indicates the begg
 ![Flow control](/pictures/flowchart.PNG)
 
 <h2>5. App Implementation</h2>
-In order to display efficient project managment & time management skills i will use a free internet tool called **trello**. (www.trello.com) This is a great tool that allows me to plan out a to do list, a doing list, and review list and a done list. I have also created some boards in trello for my user stories. The user stories arfe part of the planning stage that help a developer look at a project from all user angles. This should help create a well rounded product.
+In order to display efficient project managment & time management skills i will use a free internet tool called**trello**. (www.trello.com) This is a great tool that allows me to plan out a to do list, a doing list, and review list and a done list. I have also created some boards in trello for my user stories. The user stories arfe part of the planning stage that help a developer look at a project from all user angles. This should help create a well rounded product.
 
 <h2>6. Conclusion</h2>
 
