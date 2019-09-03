@@ -57,9 +57,9 @@ Instance variables will play a large role within the Llama and sloth Classes as 
 
 <h3>2.2 Classes</h3>
 As previously stated, in the variable type section, Classes will be a large part of this program. I am planning on structuring the game on 3 main classes. <br><br>
-**The first class**  will be the Llama class. Within the llama class there will be 3 sub-classes that inherit directly from the Llama "superclass" to initialize the over-arching attributes of the llamas. Each llama will then have 1 special attribute which will be specified in the specific subclass. This will mean it takes precedance over the superclass for that particular attribute. Although i could have used modules for this i found this to be a DRY-er simpler approach.<br><br>
-**The second class**  is the Sloth Boss class. Upon initialization the sloth class will randomly generate its attributes for each attribute area I.E Health, Attack & Hp. This will ensure fair and interesting game play.<br><br>
-**Third and final**  will be the battle class. This will execute the battle when initalized and will be composed using the attribute output from the initialized llamas and sloth Boss. I believe that using a class for this is the easiest way to contain the methods and allows it to be called as many times as is needed without creating an abundance of code.<br><br>
+**The** **first** **class**  will be the Llama class. Within the llama class there will be 3 sub-classes that inherit directly from the Llama "superclass" to initialize the over-arching attributes of the llamas. Each llama will then have 1 special attribute which will be specified in the specific subclass. This will mean it takes precedance over the superclass for that particular attribute. Although i could have used modules for this i found this to be a DRY-er simpler approach.<br><br>
+**The** **second** **class**  is the Sloth Boss class. Upon initialization the sloth class will randomly generate its attributes for each attribute area I.E Health, Attack & Hp. This will ensure fair and interesting game play.<br><br>
+**Third** **and** **final**  will be the battle class. This will execute the battle when initalized and will be composed using the attribute output from the initialized llamas and sloth Boss. I believe that using a class for this is the easiest way to contain the methods and allows it to be called as many times as is needed without creating an abundance of code.<br><br>
 
 <h3>2.3 Arrays</h3>
 I will use arrays in 2 sections of the app. The first array used will be if the player wants to randomly generate their llama instead of choosing for themselves. This will be a simple 3 element array containing the three clans which a random sample will be taken from & retuned as a result.<br><br> 
@@ -79,7 +79,7 @@ From a development point of view i have installed the test-unit Gem which will b
 This guide will demonstrate how the user can access and use Llama palooza. The app will be presented in such a way that it will contain explicit instructions on how to play and be very easy to self navigate without much direction. each screen will prompt the user onto the next and the rules will be set out in an weasy to understand manner within the app and are also below for your convenience.
 
 <h3>3.1 User instrucitons</h3>
-**Start up** <br>
+**Start** <br>
 To run the application you must have ruby installed with the appropriate GEMS as referenced in the gem file when the repository is downloaded. Enter the below command to run the program.<br><br>
 
 
@@ -119,7 +119,7 @@ I have used a very basic flow control diagram model. The oval indicates the begg
 ![Flow control](/pictures/flowchart.PNG)
 
 <h2>5. App Implementation</h2>
-In order to display efficient project managment & time management skills i will use a free internet tool called **Trello** . [Click here to view this service.](www.trello.com) This is a great tool that allows me to plan out a to do list, a doing list, and review list and a done list. I have also created some boards in trello for my user stories. The user stories arfe part of the planning stage that help a developer look at a project from all user angles. This should help create a well rounded product.
+In order to display efficient project managment & time management skills i will use a free internet tool called **trello** . (www.trello.com) This is a great tool that allows me to plan out a to do list, a doing list, and review list and a done list. I have also created some boards in trello for my user stories. The user stories arfe part of the planning stage that help a developer look at a project from all user angles. This should help create a well rounded product.
 
 <h2>6. Conclusion</h2>
 
