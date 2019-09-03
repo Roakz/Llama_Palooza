@@ -3,6 +3,7 @@ require 'artii'
 require 'rainbow'
 require_relative 'sloth_class'
 require_relative 'llama_classes'
+require_relative 'battle_class'
 
 # Initializes a llama class so that i can use the print artii method
 greeting = LlamaWarriors.new
@@ -46,7 +47,10 @@ puts Rainbow("            3.Lemony-Winks").blue
 puts Rainbow("            4.Randomly Generate").blue
 puts Rainbow("-----Type your response & press ENTER-----").bright.red
 
+#Battle class  instance created to use the user select method which crfeates a new instance of the chosen llama
+battle = Battle.new
+player = battle.user_select(gets.chomp.to_i)
+sloth = Sloth.new
 
-
-
-
+puts player 
+puts sloth

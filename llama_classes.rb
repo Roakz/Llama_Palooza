@@ -14,9 +14,14 @@ class LlamaWarriors
         @var = @var.asciify(word) 
         return @var
       end
-      
+
       def display
         return @display + " Health:#{@health} Attack:#{@attack} Defense:#{@defense}"
+      end
+
+      def randomize_llama
+        llamas = [Karl, LemonyWinks, Guspatcho]
+        return llamas.sample(1)
       end
 end
     # each sub class initialzed with added ability plus display defiened as an instance variable
