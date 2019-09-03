@@ -57,8 +57,11 @@ Instance variables will play a large role within the Llama and sloth Classes as 
 
 <h3>2.2 Classes</h3>
 As previously stated, in the variable type section, Classes will be a large part of this program. I am planning on structuring the game on 3 main classes. <br><br>
+
 **The first class**  will be the Llama class. Within the llama class there will be 3 sub-classes that inherit directly from the Llama "superclass" to initialize the over-arching attributes of the llamas. Each llama will then have 1 special attribute which will be specified in the specific subclass. This will mean it takes precedance over the superclass for that particular attribute. Although i could have used modules for this i found this to be a DRY-er simpler approach.<br><br>
+
 **The second class**  is the Sloth Boss class. Upon initialization the sloth class will randomly generate its attributes for each attribute area I.E Health, Attack & Hp. This will ensure fair and interesting game play.<br><br>
+
 **Third and final**  will be the battle class. This will execute the battle when initalized and will be composed using the attribute output from the initialized llamas and sloth Boss. I believe that using a class for this is the easiest way to contain the methods and allows it to be called as many times as is needed without creating an abundance of code.<br><br>
 
 <h3>2.3 Arrays</h3>
@@ -93,7 +96,7 @@ You can exit the application at any time by pressing "contol C"
 
 <h3>3.2 Game rules</h3>
 Llama Palooza is a text based battle game in which you will select your preffered Llama to battle the Sloth Boss.
-Each Llama has different attributes so choose wisely! Once you have selected a llama the computer will generate the attributes of the Sloth Boss wihtin a fair range for fun and fair gameplay.
+Each Llama has different attributes so choose wisely! Once you have selected a llama the computer will generate the attributes of the Sloth Boss wihtin a fair range for fun and fair gameplay.<br>
 
 
 __A.__ Select a llama from the profile page (choose carefully they all have different attributes which are listed on the selection page.)
