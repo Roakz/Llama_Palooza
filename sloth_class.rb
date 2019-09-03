@@ -8,9 +8,14 @@ class Sloth
     @comp_attack = rand(4..5)
     @comp_defense = rand(2..3)
     @name = "SLOTH BOSS"
+    @display = "No Llama shall eat my hands! I am the Boss!....The sloth Boss!...Come at me!"
     end
     
     def sloth_atts
       sloth_hash = {sloth_h:@comp_health, sloth_a:@comp_attack, sloth_d:@comp_defense}
     end
-  end
+
+    def display
+      return @display + " Health: #{@comp_health} Attack: #{@comp_attack} Defense: #{@comp_defense}"
+    end
+end

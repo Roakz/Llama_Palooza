@@ -60,7 +60,11 @@ puts player.llama_atts #testing purposes
 puts sloth.sloth_atts
 #calling the battle method match_up with the composition of both player llama class instance and sloth, sloth boss instance
 battle.match_up(player.name, sloth.name, player)
-
+puts Rainbow("-----------------------------------------------------").bright.red
+puts Rainbow(player.display).purple
+puts""
+puts Rainbow("VS.\n").bright.red
+puts Rainbow(sloth.display).blue
 # Player picks heads or tails to decide who starts
 puts Rainbow("-----------------------------------------------------").bright.red
 puts Rainbow("Lets flip a coin. If you win You get the first attack").blue
