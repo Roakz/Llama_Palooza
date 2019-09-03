@@ -4,21 +4,36 @@
 <h1>Application Development Plan</h1>
 
 <h3>Contents</h3>
-1. Statement of Purpose and Scope   
-  1.1 Purpose  
-  2.2 Scope  
-2. Application features  
-  2.1 Variable types  
-  2.2 Classes & methods  
-  2.3 Arrays  
-  2.4 Loops & Conditionals  
-  2.5 Error Handling  
-3. User Guide  
-  3.1 User instructions  
-  3.2 Game rules  
-4. Flow chart diagram  
-5. App implementation  
-6. Conclusion   
+**1.** Statement of Purpose and Scope
+  
+  **1.1** Purpose
+
+  **2.2** Scope 
+
+**2.** Application features
+
+  **2.1** Variable types 
+
+  **2.2** Classes & methods  
+
+  **2.3** Arrays
+
+  **2.4** Loops & Conditionals
+
+  **2.5** Error Handling
+
+**3.** User Guide
+
+  **3.1** User instructions
+
+  **3.2** Game rules
+
+**4.** Flow chart diagram
+
+**5.** App implementation
+
+**6.** Conclusion
+
 
 <h2>1.Statement of Purpose and Scope</h2>
 
@@ -28,8 +43,7 @@ Llama Palooza is being developed as part of my Fast Track coding bootcamp assess
 
 <h3>1.2 Scope</h3>
 
-What will it do? Llama palooza will be an interactive text based battle game that allows the user/player to choose
-from 3 Llama clan warriors. Each of these characters will have a varying level of attributes. The player will then enter battle with the Sloth Boss. The Sloth Boss's attributes will be randomly generated and the match will be displayed. The generation Of Soth Boss's attributes will be within a fair scope to allow for fun and fair game play.
+**What will it do?** Llama palooza will be an interactive text based battle game that allows the user/player to choose from 3 Llama clan warriors. Each of these characters will have a varying level of attributes. The player will then enter battle with the Sloth Boss. The Sloth Boss's attributes will be randomly generated and the match will be displayed. The generation Of Soth Boss's attributes will be within a fair scope to allow for fun and fair game play.
 
 Once the match is displayed a heads and tails choice will go to the player and and the winner will start (either the player or sloth boss). Each player will take turns at attacking (randomly generated attack types) until a winner is apparent. The player will then have the option of playing again or exiting the game. If the player chooses to play again they can then choose if they want to change clans or continue with their current Llama. Sloth boss's attributrs will be regenerated to ensure fair game play.
 
@@ -37,7 +51,7 @@ __Have fun!__
 
 __What problem will it solve?__ This is purely for professional and personal development and to meet assessment criteria.
 
-Whos it for? This game will be a bit of fun for anybody who enjoys text based game play. Also I hope that some of the methods and features included, within Llama Palooza, will help aspiring developers with their own projects. I also look forward to having access to the finished product to look back at for my own developmental purposes.
+**Whos it for?** This game will be a bit of fun for anybody who enjoys text based game play. Also I hope that some of the methods and features included, within Llama Palooza, will help aspiring developers with their own projects. I also look forward to having access to the finished product to look back at for my own developmental purposes.
 
 <h2>2. Application Features </h2>
 
