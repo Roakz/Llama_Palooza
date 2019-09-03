@@ -39,17 +39,28 @@ def user_select(integer)
       puts Rainbow(player.print_artii(sloth)).bright.blue
     end
 
-    def battle_loop(p1, comp, coin)
+    def coin_toss(coin)
+      @coin = coin
+      @ascii = LlamaWarriors.new
       @flip = rand(1..2)
-      puts @flip #testing
-        if @flip == coin
+      puts Rainbow( @ascii.print_artii( @flip == 1 ? "HEADS" : "TAILS")).bright.red 
+      puts Rainbow( @ascii.print_artii( @coin == @flip ? "YOU START!" : "SLOTH BOSS STARTS : (")).bright.blue
+    end
+        
+    def battle_loop(p1, comp)
+        if @flip == @coin
         #player_attack
-          @comp_health = (comp[:sloth_h] - (p1[:llama_a] - p1[:llama_d]))
+          @comp_health = (comp[:sloth_h] - (@player_attack = (p1[:llama_a] - p1[:llama_d])))
           puts @comp_health
+          puts @player_attack
+          # insert random array of atack types one for sloth and one for llamas and sample to display random
+          #loop this so that it continues and keeps taking health until 1 person loses press enter each time
         else
+      
           #comp_attack
-          @p1_health = (p1[:llama_h] - (comp[:sloth_a] - comp[:sloth_d]))
+          @p1_health = (p1[:llama_h] - (@comp_attack = (comp[:sloth_a] - comp[:sloth_d])))
           puts @p1_health
+          puts @comp_attack
         end
 
         
