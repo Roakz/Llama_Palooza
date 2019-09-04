@@ -1,5 +1,5 @@
 # roarkzprojects
-![Llama Palooza Welcome](/pictures/greeting1.PNG)
+![Llama Palooza Welcome](/pictures/welcome_page.PNG)
 
 <h1>Application Development Plan</h1>
 
@@ -35,9 +35,9 @@ Llama Palooza is being developed as part of my Fast Track coding bootcamp assess
 
 <h3>1.2 Scope</h3>
 
-**What will it do?** Llama palooza will be an interactive text based battle game that allows the user/player to choose from 3 Llama clan warriors. Each of these characters will have a varying level of attributes. The player will then enter battle with the Sloth Boss. The Sloth Boss's attributes will be randomly generated and the match will be displayed. The generation Of Soth Boss's attributes will be within a fair scope to allow for fun and fair game play.
+**What will it do?** Llama palooza will be an interactive text based battle game that allows the user/player to choose from 3 Llama clan warriors. Each of these characters will have a varying level of attributes. The player will then enter battle with the Sloth Boss. The Sloth Boss's attributes will be randomly generated and the match will be displayed. The generation Of Sloth Boss's attributes will be within a fair scope to allow for fun and fair game play.
 
-Once the match is displayed a heads and tails choice will go to the player and and the winner will start (either the player or sloth boss). Each player will take turns at attacking (randomly generated attack types) until a winner is apparent. The player will then have the option of playing again or exiting the game. If the player chooses to play again they can then choose if they want to change clans or continue with their current Llama. Sloth boss's attributrs will be regenerated to ensure fair game play.
+Once the match is displayed a heads and tails choice will go to the player and and the winner will start (either the player or sloth boss). Each player will take turns at attacking (randomly generated attack types) until a winner is apparent. The player will then have the option of playing again or exiting the game. If the player chooses to play again they can then choose if they want to change clans or continue with their current Llama. Sloth boss's attributes will be regenerated to ensure fair game play.
 
 __Have fun!__
 
@@ -66,11 +66,11 @@ As previously stated, in the variable type section, Classes will be a large part
 
 <h3>2.3 Arrays</h3>
 I will use arrays in 2 sections of the app. The first array used will be if the player wants to randomly generate their llama instead of choosing for themselves. This will be a simple 3 element array containing the three clans which a random sample will be taken from & retuned as a result.<br><br> 
-The second use of arrays will be in the battle loop. During battle at each attack an attack description will once again be randomly sampled from the list stored within the array. The Sloth Boss will have its own array of attacks to keep it interesting. These attack descriptions wont effect who wins it is purely for user enjoyment and to keep it interesting. The attributes will mathematically decide who wins. Given more time it could always be updated to include additional attack points depnding on attack types etc. I however want to demonstrate constraint in planning and carrying out a project.<br><br>
+The second use of arrays will be in the battle loop. During battle at each attack an attack description will once again be randomly sampled from the list stored within the array. The Sloth Boss will have its own array of attacks to keep it interesting. These attack descriptions wont effect who wins it is purely for user enjoyment and to keep it interesting. The attributes will mathematically decide who wins. Given more time it could always be updated to include additional attack points depending on attack types etc. However I wanted to demonstrate constraint in planning and carrying out a project.<br><br>
 
 <h3>2.4 Loops and conditionals</h3>
-The whole game will be contained within a "Loop DO" loop to ensure continuing game play whilst the player wishes to continue. Part of the play on loop will allow an option to change clans or remain the same. The main loop though will be the battle loop. This will use boolean operators to continue to loop "Until" a true is returned on a given condition (either players or sloth boss's HP is dimished). <br><br>
-Conditionals will be used for selection at several points during the program. There will be a Case used to outline "when" conditions when choosing the laama, or randomize llama option, and also within the battle methods. The heads and tails to decide who starts will be a true/false boolean operator using a simple if else statement.<br><br>
+The whole game will be contained within a "Loop DO" loop to ensure continuing game play whilst the player wishes to continue & a secondry Until loop nested within to loop if no new llama is requested. Part of the play on loop will allow an option to change Llama or remain the same. The main loop though will be the battle_loop.(contained within the battle class) This will use boolean operators to continue to loop "Until" a true is returned on a given condition (either players or sloth boss's HP is dimished). <br><br>
+Conditionals will be used for selection at several points during the program. There will be a Case used to outline "when" conditions when choosing the laama, or randomize llama option. There us also If else statements contained within the battle class loop.<br><br>
 
 <h3>2.5 Error Handling</h3>
 Error handling will be developed through continuous (TDD) Test dirven development during development of this program and as issues are identified they will be resolved. The main areas that will be observed are anywhere that the user has input. I want to ensure that when inputs, other than what are requested, are entered an error will be returned and it will loop back for another opporunity for the user to input the request. <br><br>
@@ -81,10 +81,10 @@ From a development point of view i have installed the test-unit Gem which will b
 
 This guide will demonstrate how the user can access and use Llama palooza. The app will be presented in such a way that it will contain explicit instructions on how to play and be very easy to self navigate without much direction. each screen will prompt the user onto the next and the rules will be set out in an weasy to understand manner within the app and are also below for your convenience.
 
-<h3>3.1 User instrucitons</h3>
+<h3>3.1 User instructions</h3>
 
 **Start** <br>
-To run the application you must have ruby installed with the appropriate GEMS as referenced in the gem file when the repository is downloaded from GitHub. Enter the below command to run the program.<br><br>
+To run the application you must have the latest version of ruby installed with the appropriate GEMS as referenced in the gem file when the repository is downloaded from GitHub. Enter the below command to run the program.<br><br>
 
 
 ![Start up](/pictures/startup.png)
@@ -137,9 +137,9 @@ I have used a very basic flow control diagram model. The oval indicates the begg
 ![Flow control](/pictures/flowchart.PNG)
 
 <h2>5. App Implementation</h2>
-In order to display efficient project managment & time management skills i will use a free internet tool called Trello. (www.trello.com) This is a great tool that allows me to plan out a to do list, a doing list, and review list and a done list. I have also created some boards in trello for my user stories. The user stories arfe part of the planning stage that help a developer look at a project from all user angles. This should help create a well rounded product.
+In order to display efficient project managment & time management skills i will use a free internet tool called Trello. (www.trello.com) This is a great tool that allows me to plan out a to do list, a doing list, and review list and a done list. I have also created some boards in trello for my user stories. The user stories are part of the planning stage that help a developer look at a project from all user angles. This should help create a well rounded product.
 
 <h2>6. Additions & improvements</h2>
-In working my way through the design and build of this app alot of refining was done at each stage to help  ensure "agile" workable code. I set out with the goal for it to be as DRY as possible and improvable in the future. Some easily achievable additions to the game would be Multiple sloth's with different attributes, Differnt attack points for different attacks, a choice of attacks instead of a randomized scenario, a randomisation of the players stats, special in game bonuses for either player just to name a few. It has been designed in such a way that changes to the numbers mathematically should not break the code or require mass searches through code to look for updates. As everything is calculated in methods using the required initial data.
+In working my way through the design and build of this app alot of refining was done at each stage to help  ensure "agile" workable code. I set out with the goal for it to be as DRY as possible and improvable in the future. Some easily achievable additions to the game would be Multiple sloth's with different attributes, Different attack points for different attacks, a choice of attacks instead of a randomized scenario, a randomisation of the players stats, special in game bonuses for either player just to name a few. It has been designed in such a way that changes to the numbers mathematically should not break the code or require mass searches through code to look for updates. As everything is calculated in methods using the required initial data.
 
 <h1>Hope you enjoy! Feel free to send Feedback on code improvements!!</h1>
