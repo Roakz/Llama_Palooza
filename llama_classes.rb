@@ -6,7 +6,7 @@ class LlamaWarriors
       def initialize
         @name = ""
         @health = 10
-        @attack = 4
+        @attack = 5
         @defense = 2                    
       end 
 #The print artii method helps keep the code DRY on the main ruby script as i will be using this function on most screens
