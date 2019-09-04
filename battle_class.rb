@@ -3,7 +3,7 @@ require 'rainbow'
 require_relative 'llama_classes'
 
   class Battle
-  attr_reader :user_select, :comp_attack, :player_atack
+  attr_reader :user_select, :comp_attack, :player_atack, :winner, :loser
   def initialize
     @ascii = LlamaWarriors.new
   end
@@ -77,6 +77,13 @@ require_relative 'llama_classes'
             puts Rainbow("#{@next_health} is #{@next_name}'s Health").bright.red
             puts Rainbow("--------------------PRESS ENTER TO CONTINUE-------------------").bright.purple
             gets.chomp
+            if @next_health < 1 
+              @winner = @starter_name
+              @loser = @next_name
+             else
+              @winner = @next_name
+              @loser = @starter_name
+           end
           break if @next_health < 1 
             # next_attack
             puts Rainbow("#{@next_name} dealt a #{@next_array.sample(1)[0]}").bright.blue
@@ -84,8 +91,15 @@ require_relative 'llama_classes'
             puts Rainbow("#{@starter_health} is #{@starter_name}'s Health").bright.blue
             puts Rainbow("--------------------PRESS ENTER TO CONTINUE-------------------").bright.purple
             gets.chomp
-      
+            if @next_health < 1 
+              @winner = @starter_name
+              @loser = @next_name
+             else
+              @winner = @next_name
+              @loser = @starter_name
+           end
           end
         end
+
   end
 
