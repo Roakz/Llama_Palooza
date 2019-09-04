@@ -29,7 +29,7 @@ require_relative 'llama_classes'
         return rand_llama
         break
         else  
-          puts "Thats not a valid input please try again!"
+          puts Rainbow("Thats not a valid input please try again!").bright.red
           integer = gets.chomp.to_i
         end
       end

@@ -4,9 +4,7 @@ require 'rainbow'
 require_relative 'sloth_class'
 require_relative 'llama_classes'
 require_relative 'battle_class'
-#Game loop variables
-new_llama = nil
-play_again = nil
+
 # Initializes a llama class so that i can use the print artii method
 greeting = LlamaWarriors.new
 # Heading that says Welcome to llama palooza using the artii and rainbow gems to form a colourful ascii style heading.
@@ -29,8 +27,9 @@ system("clear") # clears the screen to give the user a fresh page to select thei
 karl = Karl.new
 guspatcho = Guspatcho.new
 lemonywinks = LemonyWinks.new
-
-# until play_again == "n" || (play_again == "y" && new_llama == "n")
+loop do
+new_llama = nil
+play_again = nil
 # Calling my llama class print artii method and adding color with rainbow
 puts Rainbow(karl.print_artii("KARL")).bright.red
 puts Rainbow(karl.display).red
@@ -58,8 +57,7 @@ battle = Battle.new
 player = battle.user_select(gets.chomp.to_i)
 
 # This loops game without selecting a new llama
-# until new_llama == "y" || play_again == "n"
-
+until new_llama == "y"
 #sloth randomly generates its attributes upon being created.
 sloth = Sloth.new
 system("clear")
@@ -95,19 +93,19 @@ puts Rainbow("Play again? y/n").bright.blue
 puts Rainbow("-----------Type your response & press ENTER----------").bright.red  
 play_again = gets.chomp
 
-# until (play_again == "y" && new_llama == ("y" || "n")) || play_again == "n"
-#  case play_again
-#  when "n"
-#     exit
-#  when "y"
-#    puts "Do you want to choose a new llama?y/n"
-#    new_llama = gets.chomp
-#  else  
-#     puts Rainbow("INVALID INPUT TRY AGAIN").bright.red
-#     play_again = gets.chomp
-#  end
-# end
-# end
-# end
+until play_again == "y" && new_llama != nil   
+ case play_again
+ when "n"
+    exit
+ when "y"
+   puts "Do you want to choose a new llama?y/n"
+   new_llama = gets.chomp
+ else  
+    puts Rainbow("INVALID INPUT TRY AGAIN").bright.red
+    play_again = gets.chomp
+ end
+end
+end
+end
 
 
