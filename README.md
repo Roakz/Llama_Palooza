@@ -9,22 +9,24 @@
   **1.1** Purpose<br>
   **2.2** Scope<br>
 
-**2. Application features**<br>
+**2. Programming Fundamentals Displayed (Ruby)**<br>
   **2.1** Variable types <br>
   **2.2** Classes & methods<br> 
   **2.3** Arrays<br>
   **2.4** Loops & Conditionals<br>
   **2.5** Error Handling<br>
+  
+**3. Features**<br>  
 
-**3. User Guide**<br>
-  **3.1** User instructions<br>
-  **3.2** Game rules<br>
+**4. User Guide**<br>
+  **4.1** User instructions<br>
+  **4.2** Game rules<br>
 
-**4. Flow chart diagram**<br>
+**5. Flow chart diagram**<br>
 
-**5. App implementation**<br>
+**6. App implementation**<br>
 
-**6. Conclusion**<br>
+**7. Conclusion**<br>
 
 
 <h2>1.Statement of Purpose and Scope</h2>
@@ -45,7 +47,7 @@ __What problem will it solve?__ This is purely for professional and personal dev
 
 **Whos it for?** This game will be a bit of fun for anybody who enjoys text based game play. Also I hope that some of the methods and features included, within Llama Palooza, will help aspiring developers with their own projects. I also look forward to having access to the finished product to look back at for my own developmental purposes.
 
-<h2>2. Application Features </h2>
+<h2>2. Programming Fundamentals displayed (ruby) </h2>
 
 This application will use a range of features to demonsatrate my understanding of the basic principles of programming using the ruby language. Below is an outline of what will be used and where in the app.
 
@@ -75,13 +77,17 @@ Conditionals will be used for selection at several points during the program. Th
 <h3>2.5 Error Handling</h3>
 Error handling will be developed through continuous (TDD) Test dirven development during development of this program and as issues are identified they will be resolved. The main areas that will be observed are anywhere that the user has input. I want to ensure that when inputs, other than what are requested, are entered an error will be returned and it will loop back for another opporunity for the user to input the request. <br><br>
  This will arise at picking the Llama clan, heads and tales, anywhere the user needs to press enter to continue, when the user is asked if they want to play again and, if they choose to play again, when they are asked if they want to change clan. <br><br>
-From a development point of view i have installed the test-unit Gem which will be used to drive TDD during this project. All tests will be stored in a seperate directory within the projects parent directory. This will keep them accesible for future/continues development of this project.  
+From a development point of view i have installed the test-unit Gem which will be used to drive TDD during this project. All tests will be stored in a seperate directory within the projects parent directory. This will keep them accesible for future/continues development of this project. <br><br>
 
-<h2>3. User guide</h2>
+<h2>Features</h2>
+
+
+
+<h2>4. User guide</h2>
 
 This guide will demonstrate how the user can access and use Llama palooza. The app will be presented in such a way that it will contain explicit instructions on how to play and be very easy to self navigate without much direction. each screen will prompt the user onto the next and the rules will be set out in an weasy to understand manner within the app and are also below for your convenience.
 
-<h3>3.1 User instructions</h3>
+<h3>4.1 User instructions</h3>
 
 **Start** <br>
 To run the application you must have the latest version of ruby installed with the appropriate GEMS as referenced in the gem file when the repository is downloaded from GitHub. Enter the below command to run the program.<br><br>
@@ -94,7 +100,7 @@ To run the application you must have the latest version of ruby installed with t
 You can exit the application at any time by pressing "contol C"
 
 
-<h3>3.2 Game rules</h3>
+<h3>4.2 Game rules</h3>
 Llama Palooza is a text based battle game in which you will select your preffered Llama to battle the Sloth Boss.
 Each Llama has different attributes so choose wisely! Once you have selected a llama the computer will generate the attributes of the Sloth Boss wihtin a fair range for fun and fair gameplay.<br><br>
 
@@ -129,17 +135,17 @@ __E.__ If you choose to play on you will be given an option to select a new llam
 
 __There is only one rule....Have Fun!!!__
 
-<h2>4. Flow chart diagram</h2>
+<h2>5. Flow chart diagram</h2>
 
 Below i have attached a flow chart diagram which explains the sequential and conditional flow of the game.
 I have used a very basic flow control diagram model. The oval indicates the beggining and end, the rectangle is a process and the diamand indicates a decision.All arrows are labelled to indicate which decision was made.
 
 ![Flow control](/pictures/flowchart.PNG)
 
-<h2>5. App Implementation</h2>
+<h2>6. App Implementation</h2>
 In order to display efficient project managment & time management skills i will use a free internet tool called Trello. (www.trello.com) This is a great tool that allows me to plan out a to do list, a doing list, and review list and a done list. I have also created some boards in trello for my user stories. The user stories are part of the planning stage that help a developer look at a project from all user angles. This should help create a well rounded product.
 
-<h2>6. Additions & improvements</h2>
+<h2>7. Additions & improvements</h2>
 In working my way through the design and build of this app alot of refining was done at each stage to help  ensure "agile" workable code. I set out with the goal for it to be as DRY as possible and improvable in the future. Some easily achievable additions to the game would be Multiple sloth's with different attributes, Different attack points for different attacks, a choice of attacks instead of a randomized scenario, a randomisation of the players stats, special in game bonuses for either player just to name a few. It has been designed in such a way that changes to the numbers mathematically should not break the code or require mass searches through code to look for updates. As everything is calculated in methods using the required initial data.
 
 <h1>Hope you enjoy! Feel free to send Feedback on code improvements!!</h1>

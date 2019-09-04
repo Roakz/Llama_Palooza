@@ -23,7 +23,8 @@ gets.chomp # Allows user to press enter to coninue to the next page, which will 
 system("clear") # clears the screen to give the user a fresh page to select their llama from.
 
 # Llama Profiles & selection
-# Creating an instance of each llama subclass which will inherit the Llama super class attributes and methods 
+# Creating an instance of each llama subclass which will inherit the Llama super class attributes and methods
+#This was done for calling the print artii method and display methods to create the profile screen.
 karl = Karl.new
 guspatcho = Guspatcho.new
 lemonywinks = LemonyWinks.new
