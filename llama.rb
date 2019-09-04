@@ -98,7 +98,7 @@ until play_again == "y" && new_llama != nil
  when "n"
     exit
  when "y"
-   puts "Do you want to choose a new llama?y/n"
+   puts Rainbow("Do you want to choose a new llama?y/n").bright.blue
    new_llama = gets.chomp
  else  
     puts Rainbow("INVALID INPUT TRY AGAIN").bright.red

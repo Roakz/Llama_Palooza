@@ -84,7 +84,7 @@ This guide will demonstrate how the user can access and use Llama palooza. The a
 <h3>3.1 User instrucitons</h3>
 
 **Start** <br>
-To run the application you must have ruby installed with the appropriate GEMS as referenced in the gem file when the repository is downloaded. Enter the below command to run the program.<br><br>
+To run the application you must have ruby installed with the appropriate GEMS as referenced in the gem file when the repository is downloaded from GitHub. Enter the below command to run the program.<br><br>
 
 
 ![Start up](/pictures/startup.png)
@@ -99,19 +99,33 @@ Llama Palooza is a text based battle game in which you will select your preffere
 Each Llama has different attributes so choose wisely! Once you have selected a llama the computer will generate the attributes of the Sloth Boss wihtin a fair range for fun and fair gameplay.<br><br>
 
 
-__A.__ Select a llama from the profile page (choose carefully they all have different attributes which are listed on the selection page.)
+__A.__ Select a llama from the profile page (choose carefully they all have different attributes which are listed on the selection page.) type your selection 1, 2, 4 or 4 and press ENTER to continue<br><br>
 
 
-__B.__ The computer will randomly generate your matchup and display the match up on screen. Its time to pick heads or tales. The winner gets the first attack!
+![Choose your Llama](/pictures/user_selection.PNG)<br><br>
 
 
-__C.__ You will be prompted to press enter to initalize your attack and a progress update will be posted to the screen. Whilst either you or the sloth boss are still standing you will continue the battle by pressing enter when prompted and continue to recieve updates of the battle! Good luck!
+__B.__ The computer will randomly generate your matchup and display the match up on screen. Its time to pick heads or tales. The winner gets the first attack! type 1 or 2 to make your choice and press ENTER to continue.<br><br>
+
+![match up](/pictures/match_up.PNG)<br><br>
 
 
-__D.__ Once a winner is decided, the results will be displayed, and you will be given the opportunity to play again or exit the app. simply enter a y/n input as prompted and press enter.
+__C.__ The winner of heads and tails and therefore who will start will be displayed.Press ENTER to continue.<br><br>
+
+![who starts](/pictures/who_starts.PNG)<br><br>
 
 
-__E.__ If you choose to play on you will be given an option to select a new llama or cotinue with your current selection. Simply enter the appropriate y/n selection and press enter to continue!
+__D.__ The battle begins! press enter after each battle update to continue.<br><br>
+
+![Start up](/pictures/start_battle.PNG)<br><br>
+
+
+__E.__ If you choose to play on you will be given an option to select a new llama or cotinue with your current selection. Simply enter the appropriate y/n selection and press enter to continue!<br><br>
+
+![Start up](/pictures/play_again.PNG)<br><br>
+
+![Start up](/pictures/new_llama.PNG)<br><br>
+
 
 __There is only one rule....Have Fun!!!__
 
@@ -125,5 +139,7 @@ I have used a very basic flow control diagram model. The oval indicates the begg
 <h2>5. App Implementation</h2>
 In order to display efficient project managment & time management skills i will use a free internet tool called Trello. (www.trello.com) This is a great tool that allows me to plan out a to do list, a doing list, and review list and a done list. I have also created some boards in trello for my user stories. The user stories arfe part of the planning stage that help a developer look at a project from all user angles. This should help create a well rounded product.
 
-<h2>6. Conclusion</h2>
+<h2>6. Additions & improvements</h2>
+In working my way through the design and build of this app alot of refining was done at each stage to help  ensure "agile" workable code. I set out with the goal for it to be as DRY as possible and improvable in the future. Some easily achievable additions to the game would be Multiple sloth's with different attributes, Differnt attack points for different attacks, a choice of attacks instead of a randomized scenario, a randomisation of the players stats, special in game bonuses for either player just to name a few. It has been designed in such a way that changes to the numbers mathematically should not break the code or require mass searches through code to look for updates. As everything is calculated in methods using the required initial data.
 
+<h1>Hope you enjoy! Feel free to send Feedback on code improvements!!</h1>
