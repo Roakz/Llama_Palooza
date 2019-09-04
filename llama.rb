@@ -71,13 +71,14 @@ response = gets.chomp.to_i
 system("clear")
 # user response is used as an argument parameter for the coin_toss method and printed in artii to screen
 battle.coin_toss(response)
-puts Rainbow("----------------LET THE BATTLE BEGIN-----------------").bright.red
 puts Rainbow("----------------PRESS ENTER TO START-----------------").bright.red  
 gets
 system("clear")
 
+# This 1 line is literally the battle loop calling the battle loop method from within the battle class.
 battle.battle_loop(player.llama_atts, sloth.sloth_atts, player.name, sloth.name)
 
-puts player.llama_atts #testiing purpouses
-puts sloth.sloth_atts
+
+
+
 
