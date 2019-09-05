@@ -1,6 +1,6 @@
 <h1>Llama Palooza</h1>
 
-![Llama Palooza Welcome](/home/rory/projects/llama_palooza/pictures/greeting1.PNG)
+![Llama Palooza Welcome](https://github.com/Roakz/Llama_Palooza/raw/master/pictures/welcome_page.PNG)
 
 Llama Palooza is a text based battle game in which you choose from 1 of 3 Llamas<br>
 and battle the Sloth Boss for title of the Warrior Clan of the ages.It was created<br>
