@@ -1,6 +1,6 @@
 require "test/unit"
-require_relative "../battle_class"
-require_relative "../sloth_class"
+require_relative "../classes/battle_class"
+require_relative "../classes/sloth_class"
 
 class BattleTest < Test::Unit::TestCase
 

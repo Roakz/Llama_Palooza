@@ -1,5 +1,5 @@
 require "test/unit"
-require_relative "../llama_classes"
+require_relative "../classes/llama_classes"
 require 'artii'
 
 class LlamaTest < Test::Unit::TestCase

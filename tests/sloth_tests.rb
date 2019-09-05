@@ -1,4 +1,4 @@
-require_relative "../sloth_class"
+require_relative "../classes/sloth_class"
 
 #Not a proffesional test. It is however a garunteed way to ensure the output is random everytime
 # testing that sloth randomizes its attributes

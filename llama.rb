@@ -1,9 +1,9 @@
 #Requireds
 require 'artii'
 require 'rainbow'
-require_relative 'sloth_class'
-require_relative 'llama_classes'
-require_relative 'battle_class'
+require_relative 'classes/sloth_class'
+require_relative 'classes/llama_classes'
+require_relative 'classes/battle_class'
 
 # Initializes a llama class so that i can use the print artii method
 greeting = LlamaWarriors.new
