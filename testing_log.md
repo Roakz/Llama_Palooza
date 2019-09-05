@@ -25,14 +25,17 @@ This log is a document to demonstrate the final testing that was performed on ll
 
   **Results**
   
-1. Test returned as expected. PASS
-2. Test returned as expected. PASS
-3. Test returned as expected. PASS
-4. Test returned as expected. PASS
-5. Test returned as expected. PASS
-6. Test returned as expected. PASS
-7. Tes did not return as expected Fail
+1. Test returned as expected. **PASS**
+2. Test returned as expected. **PASS**
+3. Test returned as expected. **PASS**
+4. Test returned as expected. **PASS**
+5. Test returned as expected. **PASS**
+6. Test returned as expected. **PASS**
+7. Tes did not return as expected **Fail**
   * I was able to decide on choosing a llama again the first time but then the second time it got stuck in the no llama choice loop. Time to review the logic and De-Bug this issue before release.<br><br>
+  **Update 6/09/2019**
+  * Repaired the loop lopgic and tested repeatedly. Everything seems to be in order.
+  * Test returned as expected. **PASS**
 
 <h2>Test 2</h2>
 
