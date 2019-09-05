@@ -31,7 +31,7 @@
 
 <h2>1.Statement of Purpose and Scope</h2>
 
-<h3>1.1 Purpouse</h3>
+<h3>1.1 Purpose</h3>
 
 Llama Palooza is being developed as part of my Fast Track coding bootcamp assessment criteria. This Application will demonstrate what I have learnt over the past 2 weeks and bring it all together, into an operational terminal application, in the form of a text based battle game.
 
@@ -81,10 +81,15 @@ From a development point of view i have installed the test-unit Gem which will b
 
 <h2>Features</h2>
 
-Although there is a pretty good in depth look at the features from a users perspective below and a good inside look at the prrgramming fundametals displayed above in the programming fundametals section. Here is a breif snapshot of a few of the features included and how they were implemented.
+Although there is a pretty good in depth look at the features from a users perspective below and a good inside look at the programming fundamentals displayed above in the programming fundamentals section. Here is a breif snapshot of a few of the features included and how they were implemented.
 
 <h2>Randomize your Llama if you dont want to choose</h2>
-You can let them computer choose a Llama for you! - This wasnt to difficult. I 
+
+You can let the computer choose a Llama for you! - This wasnt to difficult. I <br>
+
+<h2>Flip a coin to see who starts</h2>
+
+<h2>The battle loop</h2>
 
 <h2>4. User guide</h2>
 
