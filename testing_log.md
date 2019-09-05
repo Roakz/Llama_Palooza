@@ -34,7 +34,7 @@ This log is a document to demonstrate the final testing that was performed on ll
 7. Tes did not return as expected **Fail**
   * I was able to decide on choosing a llama again the first time but then the second time it got stuck in the no llama choice loop. Time to review the logic and De-Bug this issue before release.<br><br>
   **Update 6/09/2019**
-  * Repaired the loop lopgic and tested repeatedly. Everything seems to be in order.
+  * Repaired the loop logic and tested repeatedly. Everything seems to be in order.
   * Test returned as expected. **PASS**
 
 <h2>Test 2</h2>
