@@ -15,21 +15,21 @@ class LlamaWarriors
         @var = @var.asciify(word) 
         return @var
       end
-#displays the stats for instance it is called on
+#displays the llama atts in string form for instance it is called on
       def display
         return @display + " Health:#{@health} Attack:#{@attack} Defense:#{@defense}"
       end
-
+#a hash for accessing particular atts of any llama used in battle class for calculating the winner 
       def llama_atts
         return llama_hash = {llama_h:@health, llama_a:@attack, llama_d:@defense}
       end
-
+# A simple array of llama names that samples to pick 1 at random
       def randomize_llama
         llamas = [Karl, LemonyWinks, Guspatcho]
         return llamas.sample(1)
       end
 end
-    # each sub class initialzed with added ability plus display defiened as an instance variable
+    # each sub class initialzed with added ability plus display defined as an instance variable
     class Karl < LlamaWarriors 
       def initialize
         super

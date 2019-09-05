@@ -62,8 +62,8 @@ until new_llama == "y"
 #sloth randomly generates its attributes upon being created.
 sloth = Sloth.new
 system("clear")
-#calling the battle method match_up with the composition of both player llama class instance and sloth, sloth boss instance
-battle.match_up(player.name, sloth.name, player)
+#calling the battle method match_up with the composition of both player (llama class instance) & sloth (sloth boss instance)
+battle.match_up(player.name, sloth.name)
 puts Rainbow("-----------------------------------------------------").bright.red
 puts Rainbow(sloth.display).bright.red
 # Player picks heads or tails to decide who starts
