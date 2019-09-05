@@ -76,12 +76,18 @@ puts Rainbow("-----------Type your response & press ENTER----------").bright.red
 response = gets.chomp.to_i
 system("clear")
 # user response is used as an argument parameter for the coin_toss method and printed in artii to screen
-battle.coin_toss(response)
+battle.coin_toss(response, player.llama_atts, sloth.sloth_atts, player.name, sloth.name)
+puts Rainbow( greeting.print_artii( battle.flip == 1 ? "HEADS" : "TAILS")).bright.red 
+puts Rainbow( greeting.print_artii( battle.coin == battle.flip ? "YOU START!" : "SLOTH BOSS STARTS : (")).bright.blue
 puts Rainbow("----------------PRESS ENTER TO START-----------------").bright.red  
 gets
 system("clear")
 
-# This 1 line is literally the battle loop calling the battle loop method from within the battle class.
+# Battle screen header printed to screen and the battle loop method called to start the battle.
+# composing battle loop with the llama instance atts and sloth instance atts plus their names
+puts Rainbow(greeting.print_artii("BATTLE! BATTLE! BATTLE!")).bright.purple
+puts Rainbow("---------------------PRESS ENTER TO START---------------------").bright.purple
+gets.chomp
 battle.battle_loop(player.llama_atts, sloth.sloth_atts, player.name, sloth.name)
 system("clear")
 # Winner display page and option to play again with or without new llama
@@ -93,7 +99,7 @@ puts Rainbow("-----------------------------------------------------").bright.red
 puts Rainbow("Play again? y/n").bright.blue
 puts Rainbow("-----------Type your response & press ENTER----------").bright.red  
 play_again = gets.chomp
-
+# small until loop to ensure that the user can only input the required answers.
 until play_again == "y" && new_llama != nil   
  case play_again
  when "n"

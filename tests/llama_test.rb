@@ -20,7 +20,7 @@ class LlamaTest < Test::Unit::TestCase
         @lem = LemonyWinks.new
         assert_equal(@lem.llama_atts[:llama_h], 13)
     end
-
+# A simple test to make sure that the array is sampling correctly 
     def test_llama_array
         @llama = LlamaWarriors.new
         @test = @llama.randomize_llama

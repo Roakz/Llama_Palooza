@@ -81,7 +81,10 @@ From a development point of view i have installed the test-unit Gem which will b
 
 <h2>Features</h2>
 
+Although there is a pretty good in depth look at the features from a users perspective below and a good inside look at the prrgramming fundametals displayed above in the programming fundametals section. Here is a breif snapshot of a few of the features included and how they were implemented.
 
+<h2>Randomize your Llama if you dont want to choose</h2>
+You can let them computer choose a Llama for you! - This wasnt to difficult. I 
 
 <h2>4. User guide</h2>
 
