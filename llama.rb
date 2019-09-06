@@ -8,7 +8,8 @@ require_relative 'classes/battle_class'
 # Initializes a llama class so that i can use the print artii method
 greeting = LlamaWarriors.new
 
-# Heading that says Welcome to llama palooza using the artii and rainbow gems to form a colourful ascii style heading.
+# Heading that says Welcome to llama palooza using the artii and rainbow gems to form
+# A colorful ascii style heading.
 puts Rainbow(greeting.print_artii("WELCOME TO . . .")).bright.red
 puts Rainbow(greeting.print_artii("LLAMA")).bright.blue
 puts Rainbow(greeting.print_artii("PALOOZA !!!")).bright.purple
@@ -55,23 +56,23 @@ puts Rainbow("            3.Lemony-Winks").blue
 puts Rainbow("            4.Randomly Generate").blue
 puts Rainbow("-----Type your response & press ENTER-----").bright.red
 
-#Battle class  instance created to use the user_select method which creates a new instance of the chosen llama.
+# Battle class  instance created to use the user_select method which creates a new instance of the chosen llama.
 battle = Battle.new
 
 # Using the new battle instance and calling the user_select method passing it user input as its parameter.
-#The method outputs the chosen llama as a new instance and returns that instance to player. 
-#player is now an instance of the selected llama
+# The method outputs the chosen llama as a new instance and returns that instance to player. 
+# player is now an instance of the selected llama
 player = battle.user_select(gets.chomp.to_i)
 
 # This is the nested "until" which loops the game without selecting a new llama
 until new_llama == "y"
 new_llama = nil # re- setting the value of new llama to nil so the loop logic works
 
-#sloth randomly generates its attributes upon being created.
+# Sloth randomly generates its attributes upon being created.
 sloth = Sloth.new
 system("clear")
 
-#calling the battle method match_up with the composition of both player (llama class instance)
+# Calling the battle method match_up with the composition of both player (llama class instance)
 # & sloth (sloth boss instance)
 battle.match_up(player.name, sloth.name)
 puts Rainbow("-----------------------------------------------------").bright.red
@@ -83,23 +84,23 @@ puts Rainbow("Lets flip a coin. If you win You get the first attack").blue
 puts Rainbow("Options are 1.HEADS").blue
 puts Rainbow("            2.TAILS").blue
 puts Rainbow("-----------Type your response & press ENTER----------").bright.red  
-#accepting user response to coin toss heads or tails and assigning to the variable response
+# Accepting user response to coin toss heads or tails and assigning to the variable response
 response = gets.chomp.to_i
 system("clear")
 
-# user response is used as an argument parameter for the coin_toss method and printed in artii to screen
+# User response is used as an argument parameter for the coin_toss method and printed in artii to screen
 battle.coin_toss(response, player.llama_atts, sloth.sloth_atts, player.name, sloth.name)
 puts Rainbow( greeting.print_artii( battle.flip == 1 ? "HEADS" : "TAILS")).bright.red 
 puts Rainbow( greeting.print_artii( battle.coin == battle.flip ? "YOU START!" : "SLOTH BOSS STARTS : (")).bright.blue
 puts Rainbow("----------------PRESS ENTER TO START-----------------").bright.red  
-gets
+gets.chomp
 system("clear")
 
 # Battle screen header printed to screen and the battle_loop method called to start the battle.
 puts Rainbow(greeting.print_artii("BATTLE! BATTLE! BATTLE!")).bright.purple
 puts Rainbow("---------------------PRESS ENTER TO START---------------------").bright.purple
 gets.chomp
-battle.battle_loop
+battle.battle_loop #Battle loop method
 system("clear")
 
 # Winner display page and option to play again with or without new llama
@@ -114,9 +115,9 @@ play_again = gets.chomp
 
 # small until loop nested with another in the "case" to ensure that the user can only input the required answers.
 # Once they answer NO to playing again the program exits, else they choose if they want a new llama or not.
-#if they want a new llama it loops to user select screen and resets the variables to nil
-#if they dont want a new llama the until loop above continues and once again resets the variables to nil
-#This is enables the loops to coninue infinately
+# If they want a new llama it loops to user select screen and resets the variables to nil
+# If they dont want a new llama the until loop above continues and once again resets the variables to nil
+#This enables the loops to coninue infinately
 until play_again == "y" && new_llama == "y" || new_llama == "n"  
  case play_again
  when "n"
@@ -129,9 +130,9 @@ until play_again == "y" && new_llama == "y" || new_llama == "n"
      new_llama = gets.chomp
    end
  else  
-    puts Rainbow("INVALID INPUT TRY AGAIN").bright.red
-    play_again = gets.chomp
- end
+   puts Rainbow("INVALID INPUT TRY AGAIN").bright.red
+   play_again = gets.chomp
+end
 end
 end
 end

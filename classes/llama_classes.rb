@@ -1,6 +1,7 @@
 require "artii"
 require "rainbow"
-#Super class Llamma warriors. Instance variables define the health,attack & defense stats for all llamas within the initialize method.
+#Super class Llamma warriors. Instance variables define the health,attack &
+# defense stats for all llamas within the initialize method.
 class LlamaWarriors
     attr_accessor :health, :attack, :defense, :display, :print_artii, :name
       def initialize
@@ -9,21 +10,22 @@ class LlamaWarriors
         @attack = 5
         @defense = 2                    
       end 
-#The print artii method helps keep the code DRY on the main ruby script as i will be using this function on most screens
+      #The print artii method helps keep the code DRY on the main ruby script as i will be using this function on most screens
       def print_artii(word)
         @var = Artii::Base.new :font => 'slant'
         @var = @var.asciify(word) 
         return @var
       end
-#displays the llama atts in string form for instance it is called on
+      # Displays the llama atts in string form for instance it is called on
       def display
         return @display + " Health:#{@health} Attack:#{@attack} Defense:#{@defense}"
       end
-#a hash for accessing particular atts of any llama used in battle class for calculating the winner 
+      
+      # A hash for accessing particular atts of any llama used in battle class for calculating the winner 
       def llama_atts
         return llama_hash = {llama_h:@health, llama_a:@attack, llama_d:@defense}
       end
-# A simple array of llama names that samples to pick 1 at random
+      # A simple array of llama names that samples to pick 1 at random
       def randomize_llama
         llamas = [Karl, LemonyWinks, Guspatcho]
         return llamas.sample(1)
