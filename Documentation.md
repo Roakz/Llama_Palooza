@@ -80,7 +80,9 @@ Error handling was developed through continuous (TDD) Test dirven development du
  This arose at picking the Llama, heads and tales, anywhere the user needed to press enter to continue, when the user is asked if they want to play again and, if they choose to play again, when they are asked if they want to change Llama. <br><br>
 From a development point of view i have installed the test-unit Gem which was used to drive TDD during this project. All tests are stored in a seperate directory within the projects parent directory. This will keep them accesible for future/continues development of this project. <br><br>
 
-There is also a test log attached to this repository with the overall testing of the app upon completion. It includes the results of a small user test and a checklist developed by going through the features and user input sections to ensure the app does what its meant to without breaking.
+There is also a test log attached to this repository with the overall testing of the app upon completion. It includes the results of a small user test and a checklist developed by going through the features and user input sections to ensure the app does what its meant to without breaking.<br><br>
+
+GitHub is a great tool for helping maintain version control and avoid major OOPSIES!
 
 <h3>Here is the Test-Unit gem in action</h3>
 
