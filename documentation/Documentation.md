@@ -60,7 +60,7 @@ Instance variables will play a large role within the Llama, Sloth & Battle Class
 <h3>2.2 Classes</h3>
 As previously stated, in the variable type section, Classes will be a large part of this program. I am planning on structuring the game on 3 main classes. <br><br>
 
-**The first class**  Is the Llama class. Within the llama class there will be 3 sub-classes that inherit directly from the Llama "superclass" to initialize the over-arching attributes of the llamas. Each llama then has 1 special attribute which will be specified in the specific subclass. This means it takes precedance over the superclass for that particular attribute. Although i could have used modules for this i found this to be a DRY-er simpler approach.<br><br>
+**The first class**  Is the Llama class. Within the llama class there will be 3 sub-classes that inherit directly from the Llama "superclass" to initialize the over-arching attributes of the llamas. Each llama then has 1 special attribute which will be specified in the specific subclass. This means it takes precedance over the superclass for that particular attribute. Although i could have used modules for this i found this to be a simpler approach.<br><br>
 
 **The second class**  is the Sloth Boss class. Upon initialization the sloth class will randomly generate its attributes for each attribute area I.E Health, Attack & Hp. This will ensure fair and interesting game play.<br><br>
 
