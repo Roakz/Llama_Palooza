@@ -44,4 +44,6 @@ This log is a document to demonstrate the final testing that was performed on ll
 **Instructions to the tester**<br><br>
 Make your way through the application. Use the full range of functions and dont be shy. I wont give you any direction as of the use unless you get stuck. Feel free to try and break it if you want. Provide feeback on useability and how you feel about its ease of use without guidance. Any feeback appreciated.<br><br>
 
-**Results** 
+**Results**<br>
+**Tested by fellow student Sarah** 
+The user was able to use the app without any guidance from myself. The feedback was provided that it was simple enough to navigate with the commands that were supplied on screen. The user did find some non-colored text in my invalid response loop that i was able to fix up. The user enjoyed the game and suggested Some additional features for improvment including different attack points depending on attack types that are pulled from the array. I had found the bug mentioned in the above test before this test and the user wasnt able to break the app. Also mentioned was that they enjoyed the colours and won the game!
