@@ -96,11 +96,10 @@ gets
 system("clear")
 
 # Battle screen header printed to screen and the battle_loop method called to start the battle.
-# composing battle_loop with the llama_atts and sloth_atts hashes plus their names.
 puts Rainbow(greeting.print_artii("BATTLE! BATTLE! BATTLE!")).bright.purple
 puts Rainbow("---------------------PRESS ENTER TO START---------------------").bright.purple
 gets.chomp
-battle.battle_loop(player.llama_atts, sloth.sloth_atts, player.name, sloth.name)
+battle.battle_loop
 system("clear")
 
 # Winner display page and option to play again with or without new llama

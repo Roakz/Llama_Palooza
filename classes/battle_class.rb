@@ -70,7 +70,7 @@ require_relative 'llama_classes'
            
       #The main battle loop. It uses the information from the instance variables in coin toss to ensure the winner 
       #of heads and tails starts and then turns are taken.Loop will continue until either health it less than 1
-      def battle_loop(p1, comp, player_name, sloth_name)
+      def battle_loop
           # winner of toss takes first attack as @starter and the battle loops until we have a winner
           until @starter_health < 1 || @next_health < 1
             puts Rainbow("#{@starter_name} dealt a #{@starter_array.sample(1)[0]}").bright.red

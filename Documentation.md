@@ -12,7 +12,7 @@
 **2. Programming Fundamentals Displayed (Ruby)**<br>
   **2.1** Variable types <br>
   **2.2** Classes & methods<br> 
-  **2.3** Arrays<br>
+  **2.3** Arrays & Hashes<br>
   **2.4** Loops & Conditionals<br>
   **2.5** Error Handling<br>
   
@@ -66,39 +66,53 @@ As previously stated, in the variable type section, Classes will be a large part
 
 **Third and final**  will be the battle class. This will execute the battle when initalized and will be composed using the attribute output from the initialized llamas and sloth Boss. I believe that using a class for this is the easiest way to contain the methods and allows it to be called as many times as is needed without creating an abundance of code.<br><br>
 
-<h3>2.3 Arrays</h3>
+<h3>2.3 Arrays & Hashes</h3>
 I will use arrays in 2 sections of the app. The first array used will be if the player wants to randomly generate their llama instead of choosing for themselves. This will be a simple 3 element array containing the three clans which a random sample will be taken from & retuned as a result.<br><br> 
 The second use of arrays will be in the battle loop. During battle at each attack an attack description will once again be randomly sampled from the list stored within the array. The Sloth Boss will have its own array of attacks to keep it interesting. These attack descriptions wont effect who wins it is purely for user enjoyment and to keep it interesting. The attributes will mathematically decide who wins. Given more time it could always be updated to include additional attack points depending on attack types etc. However I wanted to demonstrate constraint in planning and carrying out a project.<br><br>
+Hashes will be used for the main battle loop. Each hash will hold the attributes of the Sloth Boss or Llama player. These hashes will be used in the battle loop to compare the attributes and decide a winner. Each key value pair within the Hashes will hold the appropriate attributes.
 
 <h3>2.4 Loops and conditionals</h3>
-The whole game will be contained within a "Loop DO" loop to ensure continuing game play whilst the player wishes to continue & a secondry Until loop nested within to loop if no new llama is requested. Part of the play on loop will allow an option to change Llama or remain the same. The main loop though will be the battle_loop.(contained within the battle class) This will use boolean operators to continue to loop "Until" a true is returned on a given condition (either players or sloth boss's HP is dimished). <br><br>
-Conditionals will be used for selection at several points during the program. There will be a Case used to outline "when" conditions when choosing the laama, or randomize llama option. There us also If else statements contained within the battle class loop.<br><br>
+The whole game will be contained within a "Loop DO" loop to ensure continuing game play whilst the player wishes to continue & a secondry "Until" loop nested within to loop if no new llama is requested. Part of the play on loop will allow an option to change Llama or remain the same. The main loop though will be the battle_loop.(contained within the battle class) This will use boolean operators to continue to loop "Until" a true is returned on a given condition (either players or sloth boss's HP is dimished). <br><br>
+Conditionals will be used for selection at several points during the program. There will be a Case used to outline "when" conditions when choosing the laama, or randomize llama option. There is also If/else statements contained within the battle class loop.<br><br>
 
 <h3>2.5 Error Handling</h3>
-Error handling will be developed through continuous (TDD) Test dirven development during development of this program and as issues are identified they will be resolved. The main areas that will be observed are anywhere that the user has input. I want to ensure that when inputs, other than what are requested, are entered an error will be returned and it will loop back for another opporunity for the user to input the request. <br><br>
- This will arise at picking the Llama clan, heads and tales, anywhere the user needs to press enter to continue, when the user is asked if they want to play again and, if they choose to play again, when they are asked if they want to change clan. <br><br>
+Error handling was developed through continuous (TDD) Test dirven development during development of this program and as issues were identified they were resolved. The main areas that will be observed are anywhere that the user has input. I want to ensure that when inputs, other than what are requested, are entered an error will be returned and it will loop back for another opporunity for the user to input the request. <br><br>
+ This will arise at picking the Llama, heads and tales, anywhere the user needs to press enter to continue, when the user is asked if they want to play again and, if they choose to play again, when they are asked if they want to change Llama. <br><br>
 From a development point of view i have installed the test-unit Gem which will be used to drive TDD during this project. All tests will be stored in a seperate directory within the projects parent directory. This will keep them accesible for future/continues development of this project. <br><br>
+
+There is also a test log attached to this repository with the overall testing of the app upon completion. It includes the results of a small user test and a checklist developed by going through the features and user input sections to ensure the app does what its meant to without breaking.
+
+<h3>Here is the Test-Unit gem in action</h3>
+
+![Llama Palooza Welcome](/pictures/test-unit.PNG)
 
 <h2>Features</h2>
 
 Although there is a pretty good in depth look at the features from a users perspective below and a good inside look at the programming fundamentals displayed above in the programming fundamentals section. Here is a breif snapshot of a few of the features included and how they were implemented.
 
-<h2>Randomize your Llama if you dont want to choose</h2>
+<h3>Randomize your Llama if you dont want to choose</h3>
 
-You can let the computer choose a Llama for you! - This wasnt to difficult. I <br>
+You can let the computer choose a Llama for you! - This wasnt to difficult. After the Battle instance is initialzed the user input gets accepted into a battle class method called user_choice. This runs a case statement to compare user input and create a new instance of the prefered llama. If the player selects randomize then a method from the llama class called randomize_llama is called which selects randomly from a small array containing the llama class names. The array sample method is used and then the return value applied to the creation of the new instance. <br>
 
-<h2>Flip a coin to see who starts</h2>
+<h3>Flip a coin to see who starts</h3>
 
-<h2>The battle loop</h2>
+The player selects from heads or tails and whoever wins the coin toss gets to start - Basically the user enters 1 for heads or 2 for tails. The coin_toss method within the battle class then randomizes a number using the Rand method within Ruby. either 1 or 2. The users input is assigned to an instance variable called @coin and the random number is assigned to an instance variable called @flip. @coin & @flip are then compared and a boolean of true assigned to if they match.<br><br>
+Within the coin_toss method ternary operations are used to assign the llama or sloth attributes to either @starter or @next instance varibales for use in the battle loop.Coin_toss accepts 5 parameters.The user_input, Llama attributes, Sloth attributes, llama name and sloth name. Then the winner of heads and tails ,and therefore the starter, is printed to the screen in ascii style text using the artii gem.
+
+<h3>The battle loop</h3>
+
+Once all the Instance variables are assigned to @starter and @next in the coin_toss method its time to call the battle_loop method! This is an interactive battle loop designed for user enjoyment. Each rounf of the battle is activated by the user pressing ENTER to make it some what interactive. The whole loop operates on an Until loop and doesnt break until either the Llama or thr sloths health is 0 or under.<br<br>
+Each player has an array of attacks, which is sampled, and a random attack is displayed to the screen. The loop will also calculate the defensive players health and re assign it to the health instance variable at each turn. There is a winner/loser method which is called in between the sloth's and the llamas turn each time which updates the value of the instance variables @winner & @loser which is used to display the winner and loser after the battle_loop is broken when the health condition of the until loop is met.
+
 
 <h2>4. User guide</h2>
 
-This guide will demonstrate how the user can access and use Llama palooza. The app will be presented in such a way that it will contain explicit instructions on how to play and be very easy to self navigate without much direction. each screen will prompt the user onto the next and the rules will be set out in an weasy to understand manner within the app and are also below for your convenience.
+This guide will demonstrate how the user can access and use Llama palooza. The app will be presented in such a way that it will contain explicit instructions on how to play and be very easy to self navigate without much direction. Each screen will prompt the user onto the next. Below is a complete user guide for interacting with app.<Br><br>
 
 <h3>4.1 User instructions</h3>
 
 **Start** <br>
-To run the application you must have the latest version of ruby installed with the appropriate GEMS as referenced in the gem file when the repository is downloaded from GitHub. Enter the below command to run the program.<br><br>
+To run the application you must have the latest version of Ruby installed with the appropriate GEMS (**See the attached Help File**)as referenced in the gem file when the repository is downloaded from GitHub. Enter the below command to run the program.<br><br>
 
 
 ![Start up](/pictures/startup.png)
@@ -151,9 +165,16 @@ I have used a very basic flow control diagram model. The oval indicates the begg
 ![Flow control](/pictures/flowchart.PNG)
 
 <h2>6. App Implementation</h2>
-In order to display efficient project managment & time management skills i will use a free internet tool called Trello. (www.trello.com) This is a great tool that allows me to plan out a to do list, a doing list, and review list and a done list. I have also created some boards in trello for my user stories. The user stories are part of the planning stage that help a developer look at a project from all user angles. This should help create a well rounded product.
+In order to display efficient project managment & time management skills i used a free internet tool called Trello. (www.trello.com) This is a great tool that allows me to plan out a to do list. I have also created some boards in trello for my user stories. The user stories are part of the planning stage that help a developer look at a project from all user angles. This should help create a well rounded product.Although not overly involved for this particular app i found this to be helpful and i will implement it on larger projects.<br><br>
+
+<h3>Trello user stories & to do list</h3>
+
+![Flow control](/pictures/trello.PNG)
+
+![Flow control](/pictures/user_stories.PNG)
+
 
 <h2>7. Additions & improvements</h2>
-In working my way through the design and build of this app alot of refining was done at each stage to help  ensure "agile" workable code. I set out with the goal for it to be as DRY as possible and improvable in the future. Some easily achievable additions to the game would be Multiple sloth's with different attributes, Different attack points for different attacks, a choice of attacks instead of a randomized scenario, a randomisation of the players stats, special in game bonuses for either player just to name a few. It has been designed in such a way that changes to the numbers mathematically should not break the code or require mass searches through code to look for updates. As everything is calculated in methods using the required initial data.
+In working my way through the design and build of this app alot of refining was done at each stage to help  ensure "agile" workable code. I set out with the goal for it to be as DRY as possible and improvable in the future. Some easily achievable additions to the game would be Multiple sloth's with different attributes, Different attack points for different attacks, a choice of attacks instead of a randomized scenario, a randomisation of the players stats, special in game bonuses for either player just to name a few. It has been designed in such a way that changes to the numbers mathematically should not break the code or require mass searches through code to look for updates. As everything is calculated in methods using the required initial data. The TDD completed helped refine the code and ensure that it was more agile.
 
 <h1>Hope you enjoy! Feel free to send Feedback on code improvements!!</h1>
