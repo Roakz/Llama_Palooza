@@ -15,4 +15,16 @@ Looking forward to spending some time working on the "fluff". its mostly coloure
 **05/09/2019 afternoon**<br><br>
 After completing alot of testing today and tonight. I am pleased to say i am truly almost there. After going through my TDD tests and catching up on them i made several changes to the code to keep it as agile and testable as possible. This was a great learning experience and i look forward to honing my TDD skills in the future. The lack of experience and knowing of how to peice a code together made it hard if not impossible for me to write my code from pre written tests. But i can certainly see the benefit of coding/developing this way to create an agile code that is easy to peace togther and apart to do what is needed.<br><br>
 
-During my final testing of the overall app i encountered a small bug with the looping of the program to diferrent sections. I think its a small logic issue which will be first on my list of repairs in the morning.
+During my final testing of the overall app i encountered a small bug with the looping of the program to diferrent sections. I think its a small logic issue which will be first on my list of repairs in the morning.<br><br>
+
+**06/09/2019 afternoon**<br><br>
+**2:43PM**<br><br>
+I have completed this project and i am ready to submitt it for grading. I hope that future aspiring developers will take something from these documents that they will be able to use to help them with there own projects. I also look forward to looking back on this one day and laughing at at how i used to write code and struggled my way through my first assignment.<br><br>
+
+Major learning curves during this assignment have been TDD is key to Agile re workable code. Utilising classes to store methods is a great way to keep your source code DRY (Dont repeat yourself). You will see that my main source code script is mostly just printing strings to the screen and calling methods from within the classes.<br><br>
+
+Time managment is key! Dont bite of more than you can chew. Thats what side projects are for :D. I also learnt that i love coding and the constant learning journey that will be provided everyday that i fire up the laptop and start solving problems. Project management tools (Like Trello) are really handy and can help keep you focused and on track. Also the true and tested Flow chart diagram is an absolute gem when it comes to figuring out the flow of your app and can help alot during the process of writing your code when trying to figure out your logic.<br><br>
+
+Peace!
+
+
